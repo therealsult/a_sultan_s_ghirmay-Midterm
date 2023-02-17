@@ -1,0 +1,731 @@
+/* We typically use one CSS file, named main.css to control all of our pages */
+
+/* this is a class we use to hide headings in our design */
+.hidden {
+    display: none;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;;
+	font-weight: 400;
+	font-size: 14px;
+	color: #000;
+	background-color: #ff3838;
+}
+
+a {
+	text-decoration: none;
+}
+
+#container {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+    background-color: #ffffff;
+}
+
+
+/* 1. Header */
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(184, 184, 184);
+    height: 60px;
+}
+
+#Logo {
+    margin: 0px 0px 10px 40px;
+    display: block;
+    height: 50px;	
+    padding: 5px 5px 5px 5px;
+    transition: all .2s ease-in-out;
+}
+
+#Logo:hover {
+    transform: scale(1.1);
+}
+
+
+.sectionNav {
+    display: none;
+}
+
+#mainNav {
+    display: block;
+    width: 100%;
+}
+
+#mainNav ul {
+    text-align: center;
+    display: block;
+    font-weight: thin;
+    margin: 15px auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#mainNav ul li {
+    display: inline;
+    margin: 2%;
+    font-size: 30px;
+}
+
+#mainNav ul li a {
+    color: #2c2c2c;
+    transition: all .15s ease-in-out;
+}
+
+#mainNav ul li a:hover {
+    font-weight: thin;
+    color: #606060;
+    border-bottom: 3px solid #000000;
+}
+
+
+
+/* 2. Hero sec */
+
+
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.quatro-can-1 {
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.title {
+    margin: 60px 0px 0px 140px;
+    letter-spacing: -2px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #EDF5E1;	
+}
+
+.heroText {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 400px;
+    height: 700px;
+    margin: 0 auto;
+    margin-right: 180px;
+}
+
+.heroText p {
+    margin: 45px 0px 0px  0px;
+    line-height: 1.2;
+    font-size: 25px;
+    font-weight: bold;
+    width: 600px;
+    color: #EDF5E1;
+    text-align: center;
+}
+
+#p2 {
+    margin-top: 350px;
+}
+
+
+
+
+
+
+/* 3.  card section  */
+
+.cards {
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cards section {
+    margin: 50px auto;
+    width: 420px;
+    background-color: #f83a3a;
+    border-radius: 5px;
+}
+
+.cards h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 80px;
+    margin-bottom: 55px;
+}
+
+.cards p {
+    color: #ffffff;
+    line-height: 1.4;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.link {
+    margin: 40px auto 50px auto;
+    display: block;
+    width: 150px;
+    color: #ffffff;    
+    border: 2px solid #000000;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 15px;
+    transition: all .2s ease-in-out;
+    padding-top: 12px;
+}
+
+.link:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    background-color: #c4c4c4;
+    border: 2px solid #fff;
+    color: #000;
+}
+
+
+
+/* 4. Drink Section */
+
+        /* commercial #1*/
+
+.com1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.page1-img1 {
+    display: block;
+    width: 575px;
+    height: 325px;
+    margin: 50px 22px 22px 0px;
+    border: 7px solid #000000;
+    transition: all .2s ease-in-out;
+}
+
+.page1-img2 {
+    width: 375px;
+    height: 325px;
+    margin: 50px 0px 0px 22px;
+    border: 7px solid #000000;
+    transition: all .2s ease-in-out;
+}
+
+.page1-img2:hover {
+    border: 7px solid #000000;
+    border-left: 30px solid #000;
+
+}
+
+.page1-img1:hover {
+    border: 7px solid #000000;
+    border-right: 30px solid #000;
+
+}
+.com1-text {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.com1-text h3 {
+    align-items: center;
+    text-align: center;
+    margin: 22px 0px 19px 22px;
+    letter-spacing: -1px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #000000;	
+}
+
+.com1-text p {
+    position: relative;
+    text-align: center;
+    width: 550px;
+    margin: 20px auto;
+    line-height: 1.2;
+    font-size: 20px;
+    color: #000000;
+}
+
+.morebtn1 {
+    display: block;
+    width: 150px;
+    color: #989898;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 40px auto;
+    margin-bottom: 40px;
+    border: 2px solid #000000;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    transition: all .2s ease-in-out;
+}
+
+.morebtn1:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    background-color: #c4c4c4;
+    border: 2px solid #fff;
+    color: #000;
+}
+
+
+/* commercial #2 */
+
+.com2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.page1-img4 {
+    display: block;
+    width: 575px;
+    height: 325px;
+    margin: 50px 0 0 50px;
+    border: 7px solid #000000;
+    transition: all .2s ease-in-out;
+}
+
+.page1-img3 {
+    width: 375px;
+    height: 325px;
+    margin: 50px auto;
+    border: 7px solid #000000;
+    transition: all .2s ease-in-out;
+}
+
+.page1-img4:hover {
+    border: 7px solid #000000;
+    border-left: 30px solid #000;
+
+}
+
+.page1-img3:hover {
+    border: 7px solid #000000;
+    border-right: 30px solid #000;
+
+}
+
+.com2-text {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.com2-text h3 {
+    align-items: center;
+    text-align: center;
+    margin: 22px 0px 19px 22px;
+    letter-spacing: -1px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #000000;	
+}
+
+.com2-text p {
+    position: relative;
+    text-align: center;
+    width: 550px;
+    margin: 20px auto;
+    line-height: 1.2;
+    font-size: 20px;
+    color: #000000;
+}
+
+.morebtn2 {
+    display: block;
+    width: 150px;
+    color: #989898;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 40px auto;
+    border: 2px solid #000000;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 100px;
+}
+
+.morebtn2:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    background-color: #c4c4c4;
+    border: 2px solid #fff;
+    color: #000;
+}
+
+/*  5.  Banner */
+
+.page1-banner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 60px;
+    margin-left: auto;
+    border-top: #000 solid 2px;
+    border-bottom: #000 solid 2px;
+    background-color: #333;
+}
+
+.page1-banner h3 {
+    margin-top: 50px;
+    margin-left: 450px;
+    color: white;
+}
+
+.page1-banner h4 {
+    margin-left: 10px;
+    color: white;
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.page1-banner h4:hover {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    margin-left: 20px;
+}
+
+
+
+/*  6. footer  */
+
+#footer {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    background-color: rgb(184, 184, 184);
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#footerLogo {
+    display: block;
+    margin-top: 40px;
+    width: 300px;
+    padding: 45px 10px 10px 10px;
+    transition: all .15s ease-in-out;
+}
+
+
+#footerLogo:hover {
+    -webkit-transform: scale(1.03, 1.03);
+    -moz-transform: scale(1.03, 1.03);
+    cursor: pointer;
+}
+
+footer h3 {
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    margin-top: -10px;
+}
+
+#footer p {
+    text-align: justify;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#social {
+    margin: 70px 0px 100px 0px;
+}
+
+#social ul li {
+    display: block;
+    display: inline;
+    margin-right: 20px;
+}
+
+#facebook {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 15px 25px 15px 25px;
+    display: inline;
+    transition: all .2s ease-in-out;
+}
+
+#instagram {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 15px 30px 15px 30px;
+    display: inline;
+    transition: all .2s ease-in-out;
+}
+
+#twitter {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 14px 25px 14px 25px;
+    display: inline;
+    transition: all .2s ease-in-out;
+}
+
+#twitter:hover {
+    background-color: #02528378;
+    color: #000;
+}
+
+#facebook:hover {
+    background-color: #3b58987b;
+    color: #000;
+}
+
+#instagram:hover {
+    background-color: #ff34a084;
+    color: #000;
+}
+
+/*  footer form   */
+
+#contact-form {
+    margin-top: 60px;
+}
+
+#contact-form ul {
+    list-style: none;
+}
+
+#contact-form h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+textarea {
+	resize: none;
+}
+
+#fname {
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+}
+
+#email {
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+}
+
+#message {
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+    height: 50px;
+}
+
+#fname:hover {
+	border: 2px solid #999999;
+}
+
+#email:hover {
+	border: 2px solid #999999;
+}
+
+#message:hover {
+	border: 2px solid #999999;
+}
+
+#submitBtn {
+    display: block;
+    width: 150px;
+    color: #989898;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 20px auto;
+    border: 2px solid #000000;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    transition: all .2s ease-in-out;
+}
+
+#submitBtn:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    background-color: #c4c4c4;
+    border: 2px solid #fff;
+    color: #000;
+}
+
+
+/* copyright banner */
+
+
+#copyright {
+    margin: 0 auto;
+    font-size: 8px;
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* contact */
+
+#googleMap {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    width: 600px;
+    height: auto;
+    border: 5px solid #000000;
+}
+
+
+.mapCon h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    margin-top: 85px;
+}
+
+#contactPage {
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+#contactPage h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+}
+
+#contactUs {
+    display: flex;
+    justify-content: center;
+}
+
+#contactUs ul {
+    list-style: none;
+}
+
+textarea {
+    resize: none;
+}
+
+
+#fullN {
+    
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+}
+
+
+#e-mail {
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+}
+
+#phoneN {
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+}
+
+#messageC {
+    width: 370px;
+	margin-bottom: 18px;
+	font-size: 14px;		
+	border: 2px solid #000000;
+	padding: 20px 20px;
+    height: 50px;
+}
+
+#fullN:hover {
+	border: 2px solid #999999;
+}
+#e-mail:hover {
+	border: 2px solid #999999;
+}
+
+#phoneN:hover {
+	border: 2px solid #999999;
+}
+
+#messageC:hover {
+	border: 2px solid #999999;
+}
+
+#submitBtnC {
+    display: block;
+    width: 150px;
+    color: #989898;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 20px auto;
+    margin-bottom: 70px;
+    border: 2px solid #000000;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    transition: all .2s ease-in-out;
+}
+
+#submitBtnC:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    background-color: #c4c4c4;
+    border: 2px solid #fff;
+    color: #000;
+
+}
+
